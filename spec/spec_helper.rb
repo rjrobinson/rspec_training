@@ -3,8 +3,8 @@ RSpec.configure do |config|
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
 
-  # config.after(:each) {
-  #   p 'I just ran a test'
+  # config.after(:example) { |example|
+  #   p example.inspect
   # }
   # config.before(:suite) {
   #   p "Welcome"

@@ -4,8 +4,9 @@ require 'post'
 describe 'Callbacks' do
   let(:blog) { Blog.new }
 
-  before(:each) do
+  before(:example) do #| example |
     blog.populate!
+    # puts example.inspect
   end
 
   it 'has one post' do
