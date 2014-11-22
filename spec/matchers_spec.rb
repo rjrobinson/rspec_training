@@ -23,9 +23,6 @@ describe "Matchers" do
   end
 
   it 'aasserts on thruthiness'do
-    bool = true
-    falsey_bool = false
-    nil_value = nil
     object = Class.new
 
     expect(object).to be_truthy
