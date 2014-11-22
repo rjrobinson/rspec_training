@@ -26,12 +26,18 @@ describe 'Comp matchers' do
       a_string_starting_with("T"),
       a_string_starting_with("F"),
       a_value < 5000
-    ] # X-TF2456
+    ]     # X-TF2456
 
-    # change
-    # contain_exactly
-    # include
-    # yield_with_args
-
+          # change
+          # contain_exactly
+          # include
+          # yield_with_args
   end     # of block
+
+  it 'compound matchers' do
+    string = 'Jose'
+
+    expect(string).to start_with("J").and end_with('e')
+    expect(50).to eq(20).or eq(50)
+  end
 end
