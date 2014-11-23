@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
+gem 'activerecord'
+gem 'database_cleaner'
+gem 'factory_girl'
 gem 'growl'
 gem 'guard'
 gem 'guard-rspec'
 gem 'rspec'
+gem 'sqlite3'
 gem 'terminal-notifier'
 gem 'terminal-notifier-guard'
