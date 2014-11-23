@@ -1,6 +1,6 @@
 require 'book'
 
-fdescribe Book do
+describe Book do
   it 'fails to create an empty book' do
     book = build(:book)
 
