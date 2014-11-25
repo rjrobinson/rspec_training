@@ -1,4 +1,9 @@
 class App < Sinatra::Base
+  configure do
+    set :raise_errors, true
+    set :show_exceptions, false
+  end
+    
   post '/books' do
     book = Book.new params[:book]
     if book.save
